@@ -1,0 +1,54 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>The Albatross — Enes Yaman</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<div class="banner">Preview build — layout and image order follow the live page; text and videos are placeholders.</div>
+<header>
+  <a class="brand" href="index.html">Enes Yaman</a>
+  <nav>
+    <span class="soon">About</span><span class="soon">Startups</span><span class="soon">Actor</span>
+    <span class="soon">Photography</span><span class="soon">Paintings</span><span class="soon">Sculpture</span>
+    <span class="soon">Press</span><span class="soon">Free Information</span><span class="soon">Essays</span>
+    <a href="the-albatross.html" aria-current="page">The Albatross</a>
+  </nav>
+</header>
+<main>
+  <h1>The Albatross</h1>
+
+  <!-- Live site: these three images each link to the Google Drive folder, in this order -->
+  <div class="stack">
+    <a href="https://drive.google.com/drive/u/1/folders/1YoVSY7Vg2HJlkLWAweeoZZF2c2_BaXIz" target="_blank" rel="noopener"><img src="albatross-1-credits.png" alt="Enes Yaman, June Fischer, Vincent Decopa"></a>
+    <a href="https://drive.google.com/drive/u/1/folders/1YoVSY7Vg2HJlkLWAweeoZZF2c2_BaXIz" target="_blank" rel="noopener"><img src="albatross-2-poster.png" alt="The Albatross poster"></a>
+    <a href="https://drive.google.com/drive/u/1/folders/1YoVSY7Vg2HJlkLWAweeoZZF2c2_BaXIz" target="_blank" rel="noopener"><img src="albatross-3-title.png" alt="The Albatross"></a>
+  </div>
+
+  <!-- Live site: text in left/right columns, then trailer, then full-film button (desktop only), then text continues -->
+  <div class="cols">
+    <p>[Synopsis — left column. Text to be copied from the live page.]</p>
+    <p>[Synopsis / poems — right column. Text to be copied from the live page.]</p>
+  </div>
+
+  <div class="ph">Trailer — <code>THE ALBATROSS TRAILER V1 FINAL CUT.mp4</code> (about 550 MB, needs external video hosting)</div>
+
+  <p style="text-align:center;margin:2rem 0">
+    <button class="btn desk-only" onclick="document.getElementById('film').showModal()">Watch the full film</button>
+  </p>
+
+  <dialog id="film">
+    <div class="bar"><button onclick="this.closest('dialog').close()" aria-label="Close">×</button></div>
+    <div class="ph" style="margin:0 0 24px">Full film — <code>The Albatross Final Cut.mp4</code> (about 491 MB, needs external video hosting)</div>
+  </dialog>
+
+  <div class="cols">
+    <p>[Text continues — left column.]</p>
+    <p>[Text continues — right column.]</p>
+  </div>
+</main>
+<footer>© 2020 by Enes Yaman. All rights reserved.</footer>
+</body>
+</html>
