@@ -1,0 +1,53 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>The Return | Enes Yaman</title>
+<meta name="robots" content="noindex">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Jost:wght@300;400&display=swap">
+<link rel="stylesheet" href="/style.css">
+</head>
+<body>
+<a class="logo" href="/">Enes<br>Yaman</a>
+<nav class="menu" aria-label="Main">
+  <a href="/about">About</a>
+  <a href="/startups">Startups</a>
+  <a href="/actor">Actor</a>
+  <a href="/photography">Photography</a>
+  <a href="/paintings">Paintings</a>
+  <a href="/sculpture">Sculpture</a>
+  <a href="/press">Press</a>
+  <a href="/free-information">Free Information</a>
+  <a href="/essays">Essays</a>
+</nav>
+<main class="page">
+<h1 class="title">The Return</h1>
+<p class="sp">2021, Oil on paper</p>
+<div class="gal"><div class="slot" data-slot="the-return-01" style="aspect-ratio:4/5;"><span>the-return-01 — 3 (estimate)</span></div>
+<div class="slot" data-slot="the-return-02" style="aspect-ratio:4/5;"><span>the-return-02 — 3 (estimate)</span></div>
+<div class="slot" data-slot="the-return-03" style="aspect-ratio:4/5;"><span>the-return-03 — 3 (estimate)</span></div>
+</div>
+</main>
+<div id="gate" class="gate" hidden>
+  <form onsubmit="return unlock(event)"><p>This page is password protected.</p>
+  <input id="pw" type="password" autocomplete="off" aria-label="Password"><button>Enter</button><p id="err" class="err"></p></form>
+</div>
+<script>
+(function(){var H="8d969eef6ecad3c29a3a629280e686cf0c3f5d5a86aff3ca12020c923adc6c92",K="gate-ok",main=document.querySelector("main");
+function ok(){try{return sessionStorage.getItem(K+location.pathname)==="1"}catch(e){return false}}
+function show(v){main.style.display=v?"":"none";document.getElementById("gate").hidden=v}
+show(ok());
+window.unlock=async function(ev){ev.preventDefault();var s=document.getElementById("pw").value;
+var b=await crypto.subtle.digest("SHA-256",new TextEncoder().encode(s));
+var x=Array.from(new Uint8Array(b)).map(function(c){return c.toString(16).padStart(2,"0")}).join("");
+if(x===H){try{sessionStorage.setItem(K+location.pathname,"1")}catch(e){}show(true)}else{document.getElementById("err").textContent="Incorrect password."}return false}})();
+</script>
+<footer>
+  <span>© 2020 by Enes Yaman. All rights reserved.</span>
+  <a href="https://www.instagram.com/ienesyaman" target="_blank" rel="noopener" aria-label="Instagram"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="3" width="18" height="18" rx="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.5" cy="6.5" r="1" fill="currentColor" stroke="none"/></svg></a>
+</footer>
+</body>
+</html>
