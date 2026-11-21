@@ -3,52 +3,127 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width,initial-scale=1">
-<title>The Albatross — Enes Yaman</title>
+<title>The Albatross | Enes Yaman</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Jost:wght@300;400&display=swap">
 <link rel="stylesheet" href="style.css">
 </head>
 <body>
-<div class="banner">Preview build — layout and image order follow the live page; text and videos are placeholders.</div>
-<header>
-  <a class="brand" href="index.html">Enes Yaman</a>
-  <nav>
-    <span class="soon">About</span><span class="soon">Startups</span><span class="soon">Actor</span>
-    <span class="soon">Photography</span><span class="soon">Paintings</span><span class="soon">Sculpture</span>
-    <span class="soon">Press</span><span class="soon">Free Information</span><span class="soon">Essays</span>
-    <a href="the-albatross.html" aria-current="page">The Albatross</a>
-  </nav>
-</header>
-<main>
-  <h1>The Albatross</h1>
+<a class="logo" href="/">Enes<br>Yaman</a>
+<nav class="menu" aria-label="Main">
+  <a href="/about">About</a>
+  <a href="/startups">Startups</a>
+  <a href="/actor">Actor</a>
+  <a href="/photography">Photography</a>
+  <a href="/paintings">Paintings</a>
+  <a href="/sculpture">Sculpture</a>
+  <a href="/press">Press</a>
+  <a href="/free-information">Free Information</a>
+  <a href="/essays">Essays</a>
+</nav>
 
-  <!-- Live site: these three images each link to the Google Drive folder, in this order -->
-  <div class="stack">
-    <a href="https://drive.google.com/drive/u/1/folders/1YoVSY7Vg2HJlkLWAweeoZZF2c2_BaXIz" target="_blank" rel="noopener"><img src="albatross-1-credits.png" alt="Enes Yaman, June Fischer, Vincent Decopa"></a>
-    <a href="https://drive.google.com/drive/u/1/folders/1YoVSY7Vg2HJlkLWAweeoZZF2c2_BaXIz" target="_blank" rel="noopener"><img src="albatross-2-poster.png" alt="The Albatross poster"></a>
-    <a href="https://drive.google.com/drive/u/1/folders/1YoVSY7Vg2HJlkLWAweeoZZF2c2_BaXIz" target="_blank" rel="noopener"><img src="albatross-3-title.png" alt="The Albatross"></a>
+<main class="page">
+  <!-- Three images, in the order given by the site owner. Each opens the Drive folder in a new window. -->
+  <a href="https://drive.google.com/drive/u/1/folders/1YoVSY7Vg2HJlkLWAweeoZZF2c2_BaXIz" target="_blank" rel="noopener"><img class="poster" src="albatross-1-credits.png" alt="The Albatross — Enes Yaman, June Fischer, Vince Decopa"></a>
+  <a href="https://drive.google.com/drive/u/1/folders/1YoVSY7Vg2HJlkLWAweeoZZF2c2_BaXIz" target="_blank" rel="noopener"><img class="poster" src="albatross-2-poster.png" alt="The Albatross poster"></a>
+  <a href="https://drive.google.com/drive/u/1/folders/1YoVSY7Vg2HJlkLWAweeoZZF2c2_BaXIz" target="_blank" rel="noopener"><img class="poster" src="albatross-3-title.png" alt="The Albatross painted poster"></a>
+
+  <section class="cols synopsis">
+    <div>
+      <p>On the cold streets of Germany, Nuri, a Turkish immigrant in his late 20s, struggles to find stable work, subsisting instead on the meager deposits from collected glass bottles. When he discovers his mother (his only real connection to the world) is postponing medical care due to the economic crisis in Turkey, his search for a job becomes a desperate race. Despite countless applications and visits to the Job Center and Arbeitsagentur, he remains unemployed, barred by his lack of German language. One day he hears the frantic calls of a bird that has fallen into his building's ventilation shaft. Unable to connect with the people around him, Nuri finds a mirror in the trapped creature: a being that still has wings, yet can no longer fly. When the bird’s song eventually fades into silence, Nuri realizes it is time to leave his own cage. If the bird must go out to find the sky, then Nuri must do the same...</p>
+    </div>
+    <div class="r">
+      <p>Almanya’nın soğuk sokaklarında, 20’li yaşlarının sonundaki Türk göçmen Nuri, düzenli bir iş bulmakta zorlanmakta; bunun yerine topladığı cam şişelerin cüzi depozito ücretleriyle hayatını idame ettirmeye çalışmaktadır. Dünyadaki tek gerçek bağı olan annesinin, Türkiye’deki ekonomik kriz nedeniyle tedavi masraflarını karşılayamayıp doktor randevularını ertelediğini öğrendiğinde, Nuri’nin iş arayışı çaresiz bir yarışa dönüşür. Sayısız başvuruya, 'Job Center' ve 'Arbeitsagentur' (İş Ajansı) ziyaretlerine rağmen, Almanca eksikliği nedeniyle bir türlü iş bulamaz.</p>
+      <p>Bir gün, odasının yanındaki havalandırma boşluğuna düşen bir kuşun telaşlı yardım çığlıklarını duyar. Etrafındaki insanlarla iletişim kurmakta zorlanan Nuri, bu kapana kısılmış canlıda kendi yansımasını bulur: Kanatları olduğu halde artık uçamayan bir varlık. Kuşun sesi zamanla sönüp sessizliğe gömüldüğünde, Nuri kendi kafesinden çıkma vaktinin geldiğini anlar. Eğer kuşun gökyüzünü bulmak için dışarı çıkması gerekiyorsa, Nuri de aynısını yapmalıdır...</p>
+    </div>
+  </section>
+
+  <!-- Trailer slot: THE ALBATROSS TRAILER V1 FINAL CUT.mp4 (~550 MB) — not hosted yet, see manual §4.5 -->
+  <div class="video" title="Trailer — video hosting pending"><span class="play"></span></div>
+  <div class="filmbtn-row">
+    <!-- Desktop only, as on the live site. Opens the full film: The Albatross Final Cut.mp4 (~491 MB) — not hosted yet -->
+    <button class="filmbtn" type="button" onclick="document.getElementById('film').showModal()">Watch the Film</button>
   </div>
-
-  <!-- Live site: text in left/right columns, then trailer, then full-film button (desktop only), then text continues -->
-  <div class="cols">
-    <p>[Synopsis — left column. Text to be copied from the live page.]</p>
-    <p>[Synopsis / poems — right column. Text to be copied from the live page.]</p>
-  </div>
-
-  <div class="ph">Trailer — <code>THE ALBATROSS TRAILER V1 FINAL CUT.mp4</code> (about 550 MB, needs external video hosting)</div>
-
-  <p style="text-align:center;margin:2rem 0">
-    <button class="btn desk-only" onclick="document.getElementById('film').showModal()">Watch the full film</button>
-  </p>
-
   <dialog id="film">
-    <div class="bar"><button onclick="this.closest('dialog').close()" aria-label="Close">×</button></div>
-    <div class="ph" style="margin:0 0 24px">Full film — <code>The Albatross Final Cut.mp4</code> (about 491 MB, needs external video hosting)</div>
+    <button class="x" type="button" aria-label="Close" onclick="this.closest('dialog').close()">×</button>
+    <div class="video" style="margin:0"><span class="play"></span></div>
   </dialog>
 
-  <div class="cols">
-    <p>[Text continues — left column.]</p>
-    <p>[Text continues — right column.]</p>
-  </div>
+  <section class="cols">
+    <div>
+      <h3>Poetry in the beginning of the film</h3>
+      <p class="poem">They spoke of freedom,
+A bird that soared,
+But here I am
+Wings clipped by words
+I can not speak,
+Skies I can not find.
+You said "another land", "another sea"
+But the city follows..
+The streets, the silence,
+The weight of unspoken words,
+It follows.</p>
+      <p class="sig">- Enes Yaman</p>
+    </div>
+    <div class="r">
+      <h3>Film açılışındaki şiir</h3>
+      <p class="poem">Özgürlükten bahsettiler,
+uçan bir kuş gibi...
+Ama işte buradayım.
+Konuşamadığım kelimelerin
+kırptığı kanatlarımla,
+gökyüzünü bulamıyorum.
+"Başka bir ülke" dedin,
+"başka bir deniz"...
+Ama şehir peşimi bırakmıyor.
+Sokaklar, sessizlik,
+söylenemeyen kelimelerin ağırlığı...
+Hepsi peşimde.</p>
+      <p class="sig">- Enes Yaman</p>
+    </div>
+  </section>
+
+  <section class="cols tight">
+    <div>
+      <h3>THE ALBATROSS</h3>
+      <p class="poem">“Often, as an amusement, crewmen
+Catch albatrosses, huge birds of the sea,
+Who follow, indolent companions of the voyage,
+The ship gliding over the salty deeps.
+
+As soon as they have placed them on the deck,
+These kings of the sky, awkward and ashamed,
+Pitiably let their large wings
+Drag at their sides like oars.
+
+This winged voyager, how gauche and weak he is!
+Once so handsome, how comic and ugly he is!”</p>
+      <p class="sig">- Charles Baudelaire</p>
+    </div>
+    <div class="r">
+      <h3>ALBATROS</h3>
+      <p class="poem">“Sıklıkla eğlence olsun diye, gemi adamları
+yakalarlar albatrosları, koca kuşları denizlerin,
+geminin izindeki, miskin yoldaşları,
+gemi tuzlu derinliklerde kayar.
+
+Bırakıldıklarında güvertenin üstüne,
+maviliklerin kralları, garip ve utanmış,
+zavallıca o büyük beyaz kanatlarını
+bir çift kürek gibi sürüklerler.
+
+Bu kanatlı gezgin, ne kadar beceriksiz ve zayıf!
+Bir zamanlar ne kadar güzeldi,
+şimdi ne kadar komik ve çirkin!”</p>
+      <p class="sig">- Charles Baudelaire</p>
+    </div>
+  </section>
 </main>
-<footer>© 2020 by Enes Yaman. All rights reserved.</footer>
+
+<footer>
+  <span>© 2020 by Enes Yaman. All rights reserved.</span>
+  <a href="https://www.instagram.com/ienesyaman" target="_blank" rel="noopener" aria-label="Instagram"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="3" width="18" height="18" rx="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.5" cy="6.5" r="1" fill="currentColor" stroke="none"/></svg></a>
+</footer>
 </body>
 </html>
